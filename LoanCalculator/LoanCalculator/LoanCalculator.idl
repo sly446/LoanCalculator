@@ -1,0 +1,29 @@
+// LoanCalculator.idl : type library source for LoanCalculator.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (LoanCalculator.tlb).
+
+[ uuid(3EF0302C-698E-4FF8-9E65-69057546EFCA), version(1.0) ]
+library LoanCalculator
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  Primary dispatch interface for CLoanCalculatorDoc
+	
+	[ uuid(342F9FA7-8D51-47F6-99B9-415EFC876F29) ]
+	dispinterface ILoanCalculator
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  Class information for CLoanCalculatorDoc
+	
+	[ uuid(CDE66F8F-5C01-41D0-BE49-CCEA2C76C002) ]
+	coclass CLoanCalculatorDoc
+	{
+		[default] dispinterface ILoanCalculator;
+	};
+};
